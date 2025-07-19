@@ -84,6 +84,8 @@
     width: 475px;
     height: 475px;
     background-image: url(./images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hero-title h2{
     font-size: 3.25rem;
@@ -272,4 +274,33 @@
     }
 
     /**hero section responsive**/
+    .main-container{
+        max-width: 576px;
+        padding: 20px;
+    }
+    .hero-content{
+        flex-direction: column-reverse;
+        max-width: 536px;
+    }
+    .hero-title h2{
+        font-size: 2rem;
+    }
+    .hero-img img{
+        width: 202px;
+        height: 190px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+    }
+    .hero-img{
+        width: 257px;
+        height: 257px;
+        background-image: url(./images/Group\ 33091.png);
+        position: relative;
+    }
+    .hero-title{
+        text-align: center;
+    }
 }
