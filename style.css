@@ -17,7 +17,12 @@
     --gray:#6C6C6C;
     --text-gray:#D9DBE1;
 }
-
+.display-none{
+    display: none;
+}
+.display-block{
+    display:block;
+}
 .poppins-thin-font {
   font-family: "Poppins", sans-serif;
 }
@@ -245,4 +250,26 @@
 }
 #reserved{
     margin: 5px 0px 17px 0px;
+}
+
+
+
+
+@media only screen and (max-width: 576px){
+    /**nav responsive**/
+    .header-wrapper{
+        max-width: 576px;
+    }
+    .navigation-bar{
+        width: 100%;
+        padding: 20px;
+    }
+    .nav-manu ul, #secrch-none{
+        display: none;
+    }
+    .bar-icons{
+        display: block;
+    }
+
+    /**hero section responsive**/
 }
