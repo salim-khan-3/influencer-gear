@@ -117,8 +117,8 @@
     max-width: 1110px;
     margin:69px auto;
     padding: 35px 62px;
-    border-top: 0.5px solid var(--dark-01);
-    border-bottom: 0.5px solid var(--dark-01);
+    border-top: 0.5px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
 }
 .brand{
     justify-content: space-between;
@@ -302,5 +302,38 @@
     }
     .hero-title{
         text-align: center;
+    }
+    /**brand section**/
+    .brand-section{
+        max-width: 536px;
+        margin: 20px 0;
+        padding: 20px 10px;
+    }
+    .brand{
+        flex-wrap: wrap;
+    }
+
+    /**collection-container**/
+    .collection-container{
+        max-width: 536px;
+    }
+    .card-container{
+         place-items: center; 
+        grid-template-columns: repeat(1,1fr);
+    }
+    /**feature section**/
+    .features-section{
+        max-width: 536px;
+    }
+    .feature-content{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .footer-section{
+        max-width: 576px;
+        padding: 20px;
     }
 }
