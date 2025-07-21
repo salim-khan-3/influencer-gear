@@ -86,6 +86,13 @@
     background-image: url(./images/Circle\ design.svg);
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+}
+.hero-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .hero-title h2{
     font-size: 3.25rem;
@@ -117,8 +124,8 @@
     max-width: 1110px;
     margin:69px auto;
     padding: 35px 62px;
-    border-top: 0.5px solid lightgray;
-    border-bottom: 0.5px solid lightgray;
+    border-top: 0.5px solid var(--dark-01);
+    border-bottom: 0.5px solid var(--dark-01);
 }
 .brand{
     justify-content: space-between;
@@ -254,7 +261,85 @@
     margin: 5px 0px 17px 0px;
 }
 
-
+@media only screen and (min-width: 576px) and (max-width:992px){
+        /**nav responsive**/
+    .header-wrapper{
+        max-width: 992px;
+    }
+    .navigation-bar{
+        width: 100%;
+        padding: 20px;
+    }
+    .nav-manu ul, #secrch-none{
+        display: none;
+    }
+    .bar-icons{
+        display: block;
+    }
+        /**hero section responsive**/
+    .main-container{
+        max-width: 992px;
+        padding: 20px;
+    }
+    .hero-content{
+        flex-direction: column-reverse;
+        gap: 50px;
+        max-width: 100%;
+    }
+    .hero-title h2{
+        font-size: 2.5rem;
+    }
+    .hero-img img{
+        width: 202px;
+        height: 190px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+    }
+    .hero-img{
+        width: 257px;
+        height: 257px;
+        background-image: url(./images/Group\ 33091.png);
+        position: relative;
+    }
+    .hero-title{
+        text-align: center;
+    }
+        /**brand section**/
+    .brand-section{
+        max-width: 992px;
+        margin: 20px 0;
+        padding: 20px 10px;
+    }
+    .brand{
+        flex-wrap: wrap;
+    }
+        /**collection-container**/
+    .collection-container{
+        max-width: 100%;
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        place-items: center; 
+    }
+      /**feature section**/
+    .features-section{
+        max-width: 100%;
+    }
+    .feature-content{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .footer-section{
+        max-width:992px;
+        padding: 20px;
+    }
+}
 
 
 @media only screen and (max-width: 576px){
@@ -280,6 +365,7 @@
     }
     .hero-content{
         flex-direction: column-reverse;
+        gap: 30px;
         max-width: 536px;
     }
     .hero-title h2{
@@ -318,8 +404,8 @@
         max-width: 536px;
     }
     .card-container{
-         place-items: center; 
         grid-template-columns: repeat(1,1fr);
+        place-items: center; 
     }
     /**feature section**/
     .features-section{
